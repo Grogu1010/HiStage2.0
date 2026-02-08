@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiStage AI Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="brand">
+          <span class="logo">HiStage</span>
+          <span class="tag">AI Companion</span>
+        </div>
+        <div class="hero-text">
+          <h1>Chat with HiStage</h1>
+          <p>
+            A polished, friendly space to talk with your AI model. Ask anything, try
+            a prompt, or just say hello.
+          </p>
+        </div>
+      </header>
+
+      <main class="chat-shell">
+        <section class="chat-window" aria-live="polite">
+          <div class="message bot">
+            <div class="avatar">HS</div>
+            <div class="bubble">
+              <p>Hello! I’m HiStage. What would you like to explore today?</p>
+              <span class="meta">Just now</span>
+            </div>
+          </div>
+        </section>
+
+        <form class="composer" id="chat-form">
+          <div class="input-wrap">
+            <input
+              id="chat-input"
+              type="text"
+              name="message"
+              placeholder="Type your message..."
+              autocomplete="off"
+              required
+            />
+            <button type="submit" class="send">
+              Send
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <p class="hint">Replies are simulated for now and will return “ERROR!”.</p>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <span>HiStage 2.0 · Crafted for fast conversations.</span>
+        <button class="ghost" id="clear-chat" type="button">Clear chat</button>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
